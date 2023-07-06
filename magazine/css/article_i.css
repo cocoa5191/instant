@@ -1,0 +1,279 @@
+@font-face {
+  font-family: "ABCDiatypeMonoVariableEdu";
+  src: url("../fonts/ABCDiatypeMonoVariableEdu.ttf");
+  font-variation-settings: "wght" 350, "slnt" 0, "SRFF" 1;
+}
+
+@font-face {
+  font-family: "ABCArizonaPlusVariable";
+  src: url("../fonts/ABCArizonaPlusVariable.ttf");
+  font-variation-settings: "srff" 100, "ital" 0, "wght" 70;
+}
+
+@font-face {
+  font-family: "TimesNewArialVF";
+  src: url("../fonts/TimesNewArialVF.ttf.otf");
+}
+
+@font-face {
+  font-family: "Tiltortion";
+  src: url("../fonts/Tiltortion.otf");
+}
+
+@font-face {
+  font-family: "social";
+  src: url("../fonts/ABCSocialEdu-Regular.otf");
+}
+
+
+
+html,
+body {
+  z-index: 1;
+  font-family: "ABCArizonaPlusVariable";
+  font-variation-settings: "srff" 0, "ital" 0, "wght" 80;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+a,
+button,
+input,
+label {
+  cursor: pointer;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+.hidden.open{
+  display: block;
+}
+
+img{
+  width: 100%;
+}
+
+h1{
+  font-size: 4vw;
+  line-height: 5vw;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20vh;
+  font-family: "Tiltortion";
+}
+
+.h2{
+  font-size: 3vw;;
+
+}
+p{
+  font-size: 2vw;
+  line-height: 2vw;
+  font-variation-settings: "wght" 200, "slnt" 0, "SRFF" 2;
+}
+
+
+.left,
+.right{
+  width: 50vw;
+  height: 100vh;
+  float: left;
+  padding: 1vw;
+}
+.left{
+  overflow: hidden;
+}
+.right{
+ background-color: #833ab4;
+  z-index: 1;
+  padding: 3vw;
+  left:50vw; 
+  overflow: scroll;
+  position: fixed;
+}
+
+.left .pornhub,
+.left .relationship,
+.left .video{
+  position: absolute;
+  left: -15vw;
+  top: -15vw;
+  transition: all 1s linear;
+}
+
+.left .pornhub.open{
+  left: 0vw;
+  top: 0vw;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+/* .left .relationship.open{
+  left: 25vw;
+  top: 15vw;
+}
+
+.left .video.open{
+  left: 35vw;
+  top: 19vw;
+} */
+
+.cover{
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.background2{
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  /* z-index: 10; */
+background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: contain;
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+.anker.loaded{
+  display: block;
+ 
+}
+
+.background{
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/24.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.introQ{
+  font-family: "pressura";
+  font-size: 3vw;
+  margin-bottom: 17vh;
+}
+
+#autor{
+ font-family: "ABCArizonaPlusVariable";
+ font-size: 1.3vw;
+ text-align: right;
+ margin-top: 2vh;
+}
+
+
+.textbox{
+  background-color: #F9F5DC;
+  border-style: outset;
+  border-color: #e4e4e4 #6c6c6c #343434 #d6d6d6;
+  color: black;
+  padding: 2vw;
+  padding-top: 0;
+  font-size: 1.5vw;
+
+
+}
+
+
+.tinder{
+  font-family: "ABCArizonaPlusVariable";
+  font-variation-settings: "srff" 0, "ital" 0, "wght" 70;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.previewimage {
+  z-index: 99;
+  display: none;
+}
+
+.previewimage.open{
+  display: block;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+.previewimage img{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 34vw;
+}
+
+.article{
+  margin-left: 2vw;
+  margin-right: 2vw;
+  color: white;
+}
+
+#infinite{
+
+  overflow: scroll;
+  height: 50vh;
+  width: auto;
+  background-color: #F9F5DC;
+  border-style: outset 2px;
+  border-color: #e4e4e4 #6c6c6c #343434 #d6d6d6;
+  color: black;
+  padding: 2vw;
+  padding-top: 2vw;
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+}
+
+/* .article .content {
+  height: 0;
+  overflow: hidden;
+  transition: all 1s linear;
+}
+
+.article .content.open {
+  height: 100vh;
+} */
